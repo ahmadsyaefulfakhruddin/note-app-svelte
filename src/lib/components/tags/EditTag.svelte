@@ -92,9 +92,9 @@
         >
       {/if}
     </div>
-    <form onsubmit={handleSumit} class="grid grid-rows-6 gap-3 max-h-[82%]">
+    <form onsubmit={handleSumit} class="grid grid-rows-6 gap-3 max-h-[95%]">
       <div
-        class="max-h-full overflow-auto py-3 row-span-4 flex flex-col gap-2 w-full"
+        class="max-h-full overflow-auto py-3 row-span-5 flex flex-col gap-2 w-full"
       >
         {#each availableTags as tag (tag.id)}
           <div
@@ -114,7 +114,7 @@
           </div>
         {/each}
       </div>
-      <div class="flex w-full justify-end row-start-5 gap-3">
+      <div class="flex w-full justify-end gap-3">
         <Button
           type="button"
           variant="outline"
