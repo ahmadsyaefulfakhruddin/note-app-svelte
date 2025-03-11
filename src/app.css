@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #dc2626;
+  --color-secondary: #62748e;
+}
+
+@layer {
+  input,
+  textarea {
+    @apply outline-none border p-2;
+  }
+}
