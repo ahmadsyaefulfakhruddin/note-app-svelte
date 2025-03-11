@@ -6,7 +6,7 @@
   let showFilter = $state(false);
 </script>
 
-<section class="w-screen relative mt-28 flex justify-center">
+<section class="w-screen relative mt-36 sm:mt-24 flex justify-center">
   <div
     class={[
       "w-screen border",
