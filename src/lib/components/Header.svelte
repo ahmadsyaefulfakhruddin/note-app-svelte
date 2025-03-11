@@ -3,8 +3,8 @@
   import Button from "./ui/Button.svelte";
 </script>
 
-<header class="fixed top-0 left-0 right-0 flex justify-center">
-  <div class="container flex justify-between px-4 bg-white flex-wrap">
+<header class="z-10 top-0 left-0 right-0 flex justify-center bg-white shadow">
+  <div class="container flex justify-between px-4 flex-wrap">
     <h1
       class={[
         "py-4 text-3xl font-extrabold",
@@ -13,7 +13,7 @@
     >
       {!$showHystory ? "Note App" : "Hystory Note App"}
     </h1>
-    <div class="flex gap-4 items-center flex-wrap">
+    <div class="flex gap-4 items-center flex-wrap py-2">
       <Button onclick={() => ($showHystory = !$showHystory)} variant="secondary"
         >{!$showHystory ? "Hystory" : "back"}</Button
       >

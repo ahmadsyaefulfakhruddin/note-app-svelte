@@ -17,7 +17,7 @@
 <button
   type="button"
   onclick={handleSetNote}
-  class="flex flex-col gap-2 justify-center items-center py-7 w-full max-w-sm rounded-lg shadow border border-slate-300 hover:scale-105 shadow-sky-50-md transition ease-in-out cursor-pointer"
+  class="flex flex-col gap-2 justify-center items-center py-7 w-full max-w-sm rounded-lg shadow border border-slate-300 hover:scale-105 shadow-sky-50-md transition ease-in-out cursor-pointer overflow-auto"
 >
   <h2 class="text-2xl font-bold">{thisNote.title}</h2>
   <div class="max-w-[90%] overflow-auto">

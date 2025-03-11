@@ -6,7 +6,7 @@
   let showFilter = $state(false);
 </script>
 
-<section class="w-screen relative mt-36 sm:mt-24 flex justify-center">
+<section class="w-screen relative mt-10 flex justify-center">
   <div
     class={[
       "w-screen border",
@@ -23,18 +23,22 @@
         transition:slide
         class="container flex flex-wrap m-auto gap-3 p-4 items-center"
       >
-        {#each $tags as tag (tag.id)}
-          <label for={tag.id} class="flex gap-1 py-2">
-            <input
-              type="checkbox"
-              name={tag.id}
-              id={tag.id}
-              bind:group={$filtered}
-              value={tag}
-            />
-            <span>{tag.label}</span>
-          </label>
-        {/each}
+        {#if $tags.length > 0}
+          {#each $tags as tag (tag.id)}
+            <label for={tag.id} class="flex gap-1 py-2">
+              <input
+                type="checkbox"
+                name={tag.id}
+                id={tag.id}
+                bind:group={$filtered}
+                value={tag}
+              />
+              <span>{tag.label}</span>
+            </label>
+          {/each}
+        {:else}
+          <span>You doesn't have tag</span>
+        {/if}
       </div>
     {/if}
   </div>

@@ -15,7 +15,7 @@
   const { notes }: NotesProps = $props();
 </script>
 
-<section class="w-full flex justify-center pt-10 pb-20">
+<section class="w-full flex justify-center pt-10 pb-20 px-2">
   {#if $notes.length > 0}
     <div
       class="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 max-w-7xl px-4 justify-center w-full justify-items-center gap-4"
