@@ -13,7 +13,7 @@ Aplikasi Catatan dengan Svelte adalah proyek front-end modern yang menggabungkan
 
 1. **Clone repositori:**
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/ahmadsyaefulfakhruddin/note-app-svelte
    cd note-app-svelte
    ```
 
