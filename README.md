@@ -12,12 +12,11 @@ Aplikasi Catatan dengan Svelte adalah proyek front-end modern yang menggabungkan
 ## Instalasi
 
 1. **Clone repositori:**
+
    ```bash
    git clone https://github.com/ahmadsyaefulfakhruddin/note-app-svelte
    cd note-app-svelte
    ```
-
-````
 
 2. **Install dependensi:**
    ```bash
@@ -48,7 +47,3 @@ npm run check
 ```
 
 ## Lisensi
-
-Proyek ini bersifat private. Silakan tentukan lisensi sesuai kebutuhan Anda.
-
-````
